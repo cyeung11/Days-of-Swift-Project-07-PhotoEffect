@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		831773C62135986E00859BFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831773C52135986E00859BFC /* AppDelegate.swift */; };
-		831773C82135986E00859BFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831773C72135986E00859BFC /* ViewController.swift */; };
-		831773CB2135986E00859BFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831773C92135986E00859BFC /* Main.storyboard */; };
 		831773CD2135987100859BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 831773CC2135987100859BFC /* Assets.xcassets */; };
 		831773D02135987100859BFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831773CE2135987100859BFC /* LaunchScreen.storyboard */; };
+		831773D82135989E00859BFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831773D72135989E00859BFC /* AppDelegate.swift */; };
+		831773DA213598A600859BFC /* PhotoInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831773D9213598A600859BFC /* PhotoInputViewController.swift */; };
+		831773DC213598D300859BFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831773DB213598D300859BFC /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		831773C22135986E00859BFC /* Project 07 PhotoEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 07 PhotoEffect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		831773C52135986E00859BFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		831773C72135986E00859BFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		831773CA2135986E00859BFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		831773CC2135987100859BFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		831773CF2135987100859BFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		831773D12135987100859BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		831773D72135989E00859BFC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		831773D9213598A600859BFC /* PhotoInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInputViewController.swift; sourceTree = "<group>"; };
+		831773DB213598D300859BFC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +54,10 @@
 		831773C42135986E00859BFC /* Project 07 PhotoEffect */ = {
 			isa = PBXGroup;
 			children = (
-				831773C52135986E00859BFC /* AppDelegate.swift */,
-				831773C72135986E00859BFC /* ViewController.swift */,
-				831773C92135986E00859BFC /* Main.storyboard */,
+				831773D72135989E00859BFC /* AppDelegate.swift */,
+				831773D9213598A600859BFC /* PhotoInputViewController.swift */,
 				831773CC2135987100859BFC /* Assets.xcassets */,
+				831773DB213598D300859BFC /* Main.storyboard */,
 				831773CE2135987100859BFC /* LaunchScreen.storyboard */,
 				831773D12135987100859BFC /* Info.plist */,
 			);
@@ -122,9 +122,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831773DC213598D300859BFC /* Main.storyboard in Resources */,
 				831773D02135987100859BFC /* LaunchScreen.storyboard in Resources */,
 				831773CD2135987100859BFC /* Assets.xcassets in Resources */,
-				831773CB2135986E00859BFC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +135,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				831773C82135986E00859BFC /* ViewController.swift in Sources */,
-				831773C62135986E00859BFC /* AppDelegate.swift in Sources */,
+				831773DA213598A600859BFC /* PhotoInputViewController.swift in Sources */,
+				831773D82135989E00859BFC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		831773C92135986E00859BFC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				831773CA2135986E00859BFC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		831773CE2135987100859BFC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Project 07 PhotoEffect
+//  Project 07 Tumblr
 //
 //  Created by Chris on 28/8/2018.
 //  Copyright © 2018 Chris. All rights reserved.
