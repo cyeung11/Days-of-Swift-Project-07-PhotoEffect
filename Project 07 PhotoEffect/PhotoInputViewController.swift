@@ -14,9 +14,17 @@ import Photos
 class PhotoInputViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var instruction: UILabel!
+    @IBOutlet weak var editButton: UIBarButtonItem!
+    
+    @IBAction func dismissSegue(_ sender: UIStoryboardSegue) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     @IBAction func edit(_ sender: Any) {
-        //TODO: 
+        //TODO:
+        performSegue(withIdentifier: "filter", sender: nil)
     }
     
     @IBAction func camera(_ sender: Any) {
@@ -63,6 +71,9 @@ class PhotoInputViewController: UIViewController, UIImagePickerControllerDelegat
         picker.dismiss(animated: true, completion: {
             if let image = info[UIImagePickerControllerOriginalImage] as? UIImage{
                 self.imageView.image = image
+                self.instruction.isHidden = true
+                self.view.backgroundColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
+                self.editButton.isEnabled = true
             }
         })
     }

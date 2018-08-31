@@ -12,6 +12,8 @@
 		831773D82135989E00859BFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831773D72135989E00859BFC /* AppDelegate.swift */; };
 		831773DA213598A600859BFC /* PhotoInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831773D9213598A600859BFC /* PhotoInputViewController.swift */; };
 		831773DC213598D300859BFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831773DB213598D300859BFC /* Main.storyboard */; };
+		839080A821397542003B918C /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839080A721397542003B918C /* FilterViewController.swift */; };
+		839080AA21398B54003B918C /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839080A921398B54003B918C /* TransitionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		831773D72135989E00859BFC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		831773D9213598A600859BFC /* PhotoInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoInputViewController.swift; sourceTree = "<group>"; };
 		831773DB213598D300859BFC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		839080A721397542003B918C /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		839080A921398B54003B918C /* TransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 			children = (
 				831773D72135989E00859BFC /* AppDelegate.swift */,
 				831773D9213598A600859BFC /* PhotoInputViewController.swift */,
+				839080A721397542003B918C /* FilterViewController.swift */,
 				831773CC2135987100859BFC /* Assets.xcassets */,
 				831773DB213598D300859BFC /* Main.storyboard */,
 				831773CE2135987100859BFC /* LaunchScreen.storyboard */,
 				831773D12135987100859BFC /* Info.plist */,
+				839080A921398B54003B918C /* TransitionManager.swift */,
 			);
 			path = "Project 07 PhotoEffect";
 			sourceTree = "<group>";
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839080AA21398B54003B918C /* TransitionManager.swift in Sources */,
+				839080A821397542003B918C /* FilterViewController.swift in Sources */,
 				831773DA213598A600859BFC /* PhotoInputViewController.swift in Sources */,
 				831773D82135989E00859BFC /* AppDelegate.swift in Sources */,
 			);
