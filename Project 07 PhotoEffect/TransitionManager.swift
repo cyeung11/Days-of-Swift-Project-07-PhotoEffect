@@ -31,10 +31,10 @@ class TransitionManager: NSObject, UIViewControllerTransitioningDelegate, UIView
                 container.addSubview(fromVC.view)
                 container.addSubview(toVC.view)
                 toFilterVC.view.alpha = 0
-                toFilterVC.filter1.transform = CGAffineTransform(translationX: 0, y: -100)
-                toFilterVC.filter2.transform = CGAffineTransform(translationX: 0, y: -100)
-                toFilterVC.filter3.transform = CGAffineTransform(translationX: 0, y: -200)
-                toFilterVC.filter4.transform = CGAffineTransform(translationX: 0, y: -200)
+                toFilterVC.filter1.transform = CGAffineTransform(translationX: -100, y: -100)
+                toFilterVC.filter2.transform = CGAffineTransform(translationX: 100, y: -100)
+                toFilterVC.filter3.transform = CGAffineTransform(translationX: -100, y: 100)
+                toFilterVC.filter4.transform = CGAffineTransform(translationX: 100, y: 100)
             } else if let fromFilterVC = fromVC as? FilterViewController{
                 container.addSubview(toVC.view)
                 container.addSubview(fromVC.view)
@@ -55,10 +55,10 @@ class TransitionManager: NSObject, UIViewControllerTransitioningDelegate, UIView
                                 toFilterVC.filter4.transform = CGAffineTransform.identity
                             } else if let fromFilterVC = fromVC as? FilterViewController {
                                 fromFilterVC.view.alpha = 0
-                                fromFilterVC.filter1.transform = CGAffineTransform(translationX: 0, y: 100)
-                                fromFilterVC.filter2.transform = CGAffineTransform(translationX: 0, y: 100)
-                                fromFilterVC.filter3.transform = CGAffineTransform(translationX: 0, y: 200)
-                                fromFilterVC.filter4.transform = CGAffineTransform(translationX: 0, y: 200)
+                                fromFilterVC.filter1.transform = CGAffineTransform(translationX: -100, y: -100)
+                                fromFilterVC.filter2.transform = CGAffineTransform(translationX: 100, y: -100)
+                                fromFilterVC.filter3.transform = CGAffineTransform(translationX: -100, y: 100)
+                                fromFilterVC.filter4.transform = CGAffineTransform(translationX: 100, y: 100)
                             }
             },
                            completion: {finish in

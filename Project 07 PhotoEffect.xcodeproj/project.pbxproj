@@ -61,11 +61,11 @@
 				831773D72135989E00859BFC /* AppDelegate.swift */,
 				831773D9213598A600859BFC /* PhotoInputViewController.swift */,
 				839080A721397542003B918C /* FilterViewController.swift */,
+				839080A921398B54003B918C /* TransitionManager.swift */,
 				831773CC2135987100859BFC /* Assets.xcassets */,
 				831773DB213598D300859BFC /* Main.storyboard */,
 				831773CE2135987100859BFC /* LaunchScreen.storyboard */,
 				831773D12135987100859BFC /* Info.plist */,
-				839080A921398B54003B918C /* TransitionManager.swift */,
 			);
 			path = "Project 07 PhotoEffect";
 			sourceTree = "<group>";
