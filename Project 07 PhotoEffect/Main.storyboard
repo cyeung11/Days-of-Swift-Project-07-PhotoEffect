@@ -54,7 +54,7 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="Q79-wY-Tv7"/>
-                        <barButtonItem title="Item" image="edit" id="b7a-Mj-YXl">
+                        <barButtonItem enabled="NO" title="Item" image="edit" id="b7a-Mj-YXl">
                             <connections>
                                 <action selector="edit:" destination="BYZ-38-t0r" id="wPY-O2-hP7"/>
                             </connections>
@@ -108,7 +108,7 @@
                                                     <constraint firstAttribute="height" constant="80" id="aZm-ih-du1"/>
                                                     <constraint firstAttribute="width" secondItem="F0N-pn-vf1" secondAttribute="height" multiplier="1:1" id="cVc-uL-aXr"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="camera"/>
+                                                <state key="normal" backgroundImage="monochrome"/>
                                                 <connections>
                                                     <action selector="selectFilter:" destination="BSP-33-6Bt" eventType="touchUpInside" id="3Bq-D7-ixx"/>
                                                 </connections>
@@ -119,7 +119,7 @@
                                                     <constraint firstAttribute="height" constant="80" id="kOX-wC-cWs"/>
                                                     <constraint firstAttribute="width" secondItem="hNP-Rv-7R2" secondAttribute="height" multiplier="1:1" id="n3P-k3-x7Y"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="camera"/>
+                                                <state key="normal" backgroundImage="blur"/>
                                                 <connections>
                                                     <action selector="selectFilter:" destination="BSP-33-6Bt" eventType="touchUpInside" id="J9f-k3-pFP"/>
                                                 </connections>
@@ -138,7 +138,7 @@
                                                     <constraint firstAttribute="height" constant="80" id="G5E-dE-jH4"/>
                                                     <constraint firstAttribute="width" secondItem="pj4-WB-Nwx" secondAttribute="height" multiplier="1:1" id="RrA-cG-0aF"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="camera"/>
+                                                <state key="normal" backgroundImage="halftone"/>
                                                 <connections>
                                                     <action selector="selectFilter:" destination="BSP-33-6Bt" eventType="touchUpInside" id="VVF-7m-uku"/>
                                                 </connections>
@@ -149,7 +149,7 @@
                                                     <constraint firstAttribute="width" secondItem="0Rd-dW-yLm" secondAttribute="height" multiplier="1:1" id="8oH-lX-CtK"/>
                                                     <constraint firstAttribute="height" constant="80" id="FBy-jX-awV"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="camera"/>
+                                                <state key="normal" backgroundImage="crystallize"/>
                                                 <connections>
                                                     <action selector="selectFilter:" destination="BSP-33-6Bt" eventType="touchUpInside" id="JtM-2S-c91"/>
                                                 </connections>
@@ -209,8 +209,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="blur" width="48" height="48"/>
         <image name="camera" width="25" height="25"/>
+        <image name="crystallize" width="48" height="48"/>
         <image name="edit" width="25" height="25"/>
         <image name="gallery" width="25" height="25"/>
+        <image name="halftone" width="48" height="48"/>
+        <image name="monochrome" width="50" height="50"/>
     </resources>
 </document>

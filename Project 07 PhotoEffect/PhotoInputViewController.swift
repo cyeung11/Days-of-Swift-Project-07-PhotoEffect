@@ -27,11 +27,14 @@ ApplyFilterDelegate{
                 imageView.isHidden = true
                 DispatchQueue.global(qos: .userInitiated).async {
                     if let resultCIImage = PhotoInputViewController.filter(image: imageToFilter, withFilerType: newValue){
-                        let resultImage = UIImage(ciImage: resultCIImage)
-                        DispatchQueue.main.async { [weak self] in
-                            self?.imageView.image = resultImage
-                            self?.imageView.isHidden = false
-                            self?.activityIndicator.stopAnimating()
+                        let ciContext = CIContext()
+                        if let cgImage = ciContext.createCGImage(resultCIImage, from: CGRect(origin: CGPoint.zero, size: imageToFilter.size)){
+                            let resultImage = UIImage(cgImage: cgImage)
+                            DispatchQueue.main.async { [weak self] in
+                                self?.imageView.image = resultImage
+                                self?.imageView.isHidden = false
+                                self?.activityIndicator.stopAnimating()
+                            }
                         }
                     }
                 }
